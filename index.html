@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>SWC Authentication</title>
+</head>
+
+<body>
+    <div class="login-container">
+
+        <div class="login-header">
+            <a href="/">SoftWare Company</a>
+        </div>
+
+        <div class="login-body">
+            <!-- Form Login -->
+            <form action="" id="signinForm">
+                <div class="login-form-container">
+                    <div class="login-form-header">
+                        <h4>
+                            Login
+                        </h4>
+                    </div>
+
+                    <div class="login-form">
+                        <input type="text" id="username" class="login-form-input" placeholder="Enter Your Username">
+                        <input type="password" id="password" class="login-form-input" placeholder="Enter Your Password">
+                        <button type="button" id="signInBtn" class="login-form-button">Sign In</button>
+
+                        <div class="login-form-help">
+                            <div class="login-form-rememberMe">
+                                <input type="checkbox" class="remberMe-cbx" id="checkbox_id">
+                                <label class="remember-lbl" for="checkbox_id">Remember me</label>
+                            </div>
+                            <!-- <a class="help-link" href="./signup.html">Sign up</a> -->
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="login-overlay">
+        </div>
+
+        <div class="login-footer">
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/sha256.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
